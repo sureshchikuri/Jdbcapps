@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <servlet-name>CreateFloorServlet</servlet-name>
+    <servlet-class>com.vcs.ws.floor.servlet.CreateFloorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FloorSearchServlet</servlet-name>
+    <servlet-class>com.vcs.ws.floor.servlet.FloorSearchServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>CreateFloorServlet</servlet-name>
+    <url-pattern>/CreateFloorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FloorSearchServlet</servlet-name>
+    <url-pattern>/FloorSearchServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

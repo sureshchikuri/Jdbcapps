@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://struts.apache.org/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+<definition name="BaseLayout" page="/layout.jsp">
+<put name="header" value="/header.jsp"/>
+<put name="menu" value="/menu.jsp"/>
+<put name="body" value=""/>
+<put name="footer" value="/footer.jsp"/>
+</definition>
+
+<definition name="TilesHome" extends="BaseLayout">
+<put name="body" value="/home.jsp"></put>
+</definition>
+
+<definition name="TilesFloor" extends="BaseLayout">
+<put name="body" value="/jsp/floor/floorInsert.jsp"></put>
+</definition>
+
+<definition name="TilesSearch" extends="BaseLayout">
+<put name="body" value="/jsp/floor/floorSearch.jsp"></put>
+</definition>
+
+<definition name="InputFloor" extends="BaseLayout">
+<put name="body" value="/jsp/floor/floorInsert.jsp"></put>
+</definition>
+
+<definition name="FloorSearch" extends="BaseLayout">
+<put name="body" value="/jsp/floor/floorSearch.jsp"></put>
+</definition>
+
+</tiles-definitions>

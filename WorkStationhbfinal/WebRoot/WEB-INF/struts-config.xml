@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="floorForm" type="com.vcs.struts.form.FloorForm" />
+		<form-bean name="zoneForm" type="com.vcs.struts.form.ZoneForm" />
+
+	</form-beans>
+
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+
+		<action path="/home" forward="TilesHome" />
+		<action path="/Create" forward="TilesFloor" />
+		<action path="/Search" forward="TilesSearch" />
+		<action path="/ZonePreCreate" forward="ZonePreCreate"></action>
+		<action path="/ZoneSearch" forward="ZoneSearch"></action>
+
+		<action path="/floorInsert" attribute="floorForm" input="InputFloor"
+			name="floorForm" type="com.vcs.struts.action.FloorCreateAction"
+			validate="true">
+			<forward name="success" path="InputFloor" />
+		</action>
+
+		<action path="/floorSearch" attribute="floorForm" input="FloorSearch"
+			name="floorForm" type="com.vcs.struts.action.FloorSearchAction"
+			validate="true">
+			<forward name="success" path="FloorSearch" />
+		</action>
+
+		<action path="/zoneCreate" attribute="zoneForm" input="ZoneCreate"
+			name="zoneForm" type="com.vcs.struts.action.ZoneAction">
+			<forward name="success" path="ZoneCreate" />
+		</action>
+		
+		<action path="/zonePreCreate" type="com.vcs.struts.action.ZonePreAction">
+			<forward name="success" path="ZonePreCreate" />
+		</action>
+		
+		<action path="/zoneSearch" attribute="zoneForm" input="ZoneSearchTile"
+			name="zoneForm" type="com.vcs.struts.action.ZoneSearchAction">
+			<forward name="success" path="ZoneSearchTile" />
+		</action>
+
+	</action-mappings>
+
+	<message-resources parameter="com.vcs.struts.ApplicationResources" />
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+	</plug-in>
+</struts-config>
+

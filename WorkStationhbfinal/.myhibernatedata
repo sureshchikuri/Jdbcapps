@@ -1,0 +1,24 @@
+#MyEclipse Hibernate Properties
+#Mon Jan 20 22:24:33 GMT-12:00 2014
+sessionFactoryName=com.vcs.struts.util.HibernateUtil
+genBasicCompId=false
+profile=
+daoSFId=
+version=3.2
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=/WorkStation/hibernate.reveng.xml
+configFile=/WorkStation/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true

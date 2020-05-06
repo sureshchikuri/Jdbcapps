@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/floorInsert.do" location="50,450" dimension="250,96" />
+  <StrutsActivity path="/floorSearch.do" location="350,250" dimension="251,96" />
+  <StrutsActivity path="/jsp/floor/floorInsert.jsp" location="50,250" dimension="157,51" />
+  <StrutsActivity path="/jsp/floor/floorSearch.jsp" location="950,250" dimension="163,51" />
+  <StrutsActivity path="/success.jsp" location="350,50" dimension="93,51" />
+  <StrutsActivity path="/floorInsert.jsp" location="950,50" dimension="107,51" />
+  <StrutsActivity path="/home.do" location="350,450" dimension="76,66" />
+  <StrutsActivity path="TilesHome" location="50,650" dimension="87,51" />
+  <StrutsActivity path="TilesStudent" location="350,650" dimension="95,51" />
+  <StrutsActivity path="TilesEmployee" location="650,650" dimension="106,51" />
+  <StrutsActivity path="/Create.do" location="650,450" dimension="79,66" />
+  <StrutsActivity path="/Search.do" location="950,450" dimension="80,66" />
+  <StrutsActivity path="TilesFloor" location="950,650" dimension="81,51" />
+  <StrutsActivity path="TilesSearch" location="50,850" dimension="89,51" />
+  <StrutsActivity path="InputFloor" location="350,850" dimension="85,51" />
+  <StrutsActivity path="FloorSearch" location="650,850" dimension="92,51" />
+  <StrutsTransition id="/jsp/floor/floorInsert.jsp,null,/floorInsert.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="175,301" />
+      <AbsolutePoint location="175,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="InputFloor,null,/floorInsert.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="392,850" />
+      <AbsolutePoint location="392,776" />
+      <AbsolutePoint location="244,776" />
+      <AbsolutePoint location="244,546" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student.do,null,TilesStudent,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,483" />
+      <AbsolutePoint location="441,483" />
+      <AbsolutePoint location="441,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/floorInsert.do,success,InputFloor,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="175,546" />
+      <AbsolutePoint location="175,875" />
+      <AbsolutePoint location="350,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/employee.do,null,TilesEmployee,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="998,516" />
+      <AbsolutePoint location="998,675" />
+      <AbsolutePoint location="756,675" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/floorSearch.do,success,FloorSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="475,346" />
+      <AbsolutePoint location="475,875" />
+      <AbsolutePoint location="650,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home.do,null,TilesHome,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="388,516" />
+      <AbsolutePoint location="388,591" />
+      <AbsolutePoint location="93,591" />
+      <AbsolutePoint location="93,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Create.do,null,TilesFloor,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="729,483" />
+      <AbsolutePoint location="861,483" />
+      <AbsolutePoint location="861,675" />
+      <AbsolutePoint location="950,675" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/floorInsert.do,success,/jsp/floor/floorInsert.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="128,450" />
+      <AbsolutePoint location="128,301" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jsp/floor/floorSearch.jsp,null,/floorSearch.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1031,301" />
+      <AbsolutePoint location="1031,316" />
+      <AbsolutePoint location="601,316" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/floorSearch.do,success,/jsp/floor/floorSearch.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="601,275" />
+      <AbsolutePoint location="950,275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Search.do,null,TilesSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="990,516" />
+      <AbsolutePoint location="990,621" />
+      <AbsolutePoint location="214,621" />
+      <AbsolutePoint location="214,875" />
+      <AbsolutePoint location="139,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="FloorSearch,null,/floorSearch.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="696,850" />
+      <AbsolutePoint location="696,716" />
+      <AbsolutePoint location="505,716" />
+      <AbsolutePoint location="505,346" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

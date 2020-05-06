@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/home.do" location="350,450" dimension="76,66" />
+  <StrutsActivity path="/Create.do" location="650,450" dimension="79,66" />
+  <StrutsActivity path="/Search.do" location="950,450" dimension="80,66" />
+  <StrutsActivity path="/zonePreCreate.do" location="350,1050" dimension="233,96" />
+  <StrutsActivity path="/floorInsert.do" location="50,450" dimension="250,96" />
+  <StrutsActivity path="/floorSearch.do" location="350,250" dimension="251,96" />
+  <StrutsActivity path="/zoneCreate.do" location="950,850" dimension="216,96" />
+  <StrutsActivity path="/zoneSearch.do" location="1250,450" dimension="251,96" />
+  <StrutsActivity path="TilesHome" location="50,650" dimension="87,51" />
+  <StrutsActivity path="TilesFloor" location="950,650" dimension="81,51" />
+  <StrutsActivity path="TilesSearch" location="50,850" dimension="89,51" />
+  <StrutsActivity path="zonePreCreate" location="50,1250" dimension="106,51" />
+  <StrutsActivity path="zonePreSearch" location="1250,850" dimension="107,51" />
+  <StrutsActivity path="InputFloor" location="350,850" dimension="85,51" />
+  <StrutsActivity path="FloorSearch" location="650,850" dimension="92,51" />
+  <StrutsActivity path="zoneCreate" location="350,1250" dimension="89,51" />
+  <StrutsActivity path="zoneSearch" location="950,1250" dimension="90,51" />
+  <StrutsActivity path="/jsp/zone/zoneCreate" location="650,1050" dimension="144,51" />
+  <StrutsActivity path="/jsp/floor/floorInsert.jsp" location="50,250" dimension="157,51" />
+  <StrutsActivity path="/jsp/floor/floorSearch.jsp" location="950,250" dimension="163,51" />
+  <StrutsActivity path="TilesStudent" location="350,650" dimension="95,51" />
+  <StrutsActivity path="TilesEmployee" location="650,650" dimension="106,51" />
+  <StrutsActivity path="/success.jsp" location="350,50" dimension="93,51" />
+  <StrutsActivity path="/jsp/zone/zoneCreate.jsp" location="50,1050" dimension="162,51" />
+  <StrutsActivity path="/zoneCreate" location="950,1050" dimension="94,51" />
+  <StrutsActivity path="" location="650,1250" dimension="30,51" />
+  <StrutsActivity path="zoneSearchTile" location="1250,1050" dimension="109,51" />
+  <StrutsActivity path="zoneTileSearch" location="1250,1250" dimension="109,51" />
+  <StrutsActivity path="/ZoneSearch.do" location="1250,650" dimension="107,66" />
+  <StrutsActivity path="ZoneSearch" location="50,1450" dimension="92,51" />
+  <StrutsActivity path="ZoneSearchTile" location="350,1450" dimension="111,51" />
+  <StrutsActivity path="ZoneCreate" location="650,1450" dimension="91,51" />
+  <StrutsActivity path="ZonePreCreate" location="1250,1450" dimension="108,51" />
+  <StrutsActivity path="/ZonePreCreate.do" location="950,1450" dimension="123,66" />
+  <StrutsTransition id="ZoneSearchTile,null,/zoneSearch.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="405,1450" />
+      <AbsolutePoint location="405,1376" />
+      <AbsolutePoint location="1405,1376" />
+      <AbsolutePoint location="1405,546" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="zoneSearchTile,null,/zoneSearch.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1075" />
+      <AbsolutePoint location="1211,1075" />
+      <AbsolutePoint location="1211,498" />
+      <AbsolutePoint location="1250,498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ZonePreCreate.do,null,ZonePreCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1073,1475" />
+      <AbsolutePoint location="1250,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home.do,null,TilesHome,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="388,516" />
+      <AbsolutePoint location="388,591" />
+      <AbsolutePoint location="93,591" />
+      <AbsolutePoint location="93,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ZoneSearch.do,null,zonePreSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1303,716" />
+      <AbsolutePoint location="1303,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="ZoneCreate,null,/zonePreCreate.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="695,1450" />
+      <AbsolutePoint location="695,1116" />
+      <AbsolutePoint location="583,1116" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="zoneCreate,null,/zoneCreate.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,1275" />
+      <AbsolutePoint location="265,1275" />
+      <AbsolutePoint location="265,916" />
+      <AbsolutePoint location="950,916" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zoneCreate.do,success,zonePreCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1059,946" />
+      <AbsolutePoint location="1059,1191" />
+      <AbsolutePoint location="103,1191" />
+      <AbsolutePoint location="103,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zoneCreate.do,success,ZoneCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1071,946" />
+      <AbsolutePoint location="1071,1191" />
+      <AbsolutePoint location="725,1191" />
+      <AbsolutePoint location="725,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zoneSearch.do,success,ZoneSearchTile,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1375,546" />
+      <AbsolutePoint location="1375,1316" />
+      <AbsolutePoint location="375,1316" />
+      <AbsolutePoint location="375,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zonePreCreate.do,success,zoneCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="394,1146" />
+      <AbsolutePoint location="394,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Search.do,null,TilesSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,483" />
+      <AbsolutePoint location="929,483" />
+      <AbsolutePoint location="929,791" />
+      <AbsolutePoint location="94,791" />
+      <AbsolutePoint location="94,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="zoneTileSearch,null,/zoneSearch.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1359,1275" />
+      <AbsolutePoint location="1417,1275" />
+      <AbsolutePoint location="1417,546" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="zonePreSearch,null,/zoneSearch.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,875" />
+      <AbsolutePoint location="1211,875" />
+      <AbsolutePoint location="1211,498" />
+      <AbsolutePoint location="1250,498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zoneCreate.do,success,zoneCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1059,946" />
+      <AbsolutePoint location="1059,1191" />
+      <AbsolutePoint location="394,1191" />
+      <AbsolutePoint location="394,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="InputFloor,null,/floorInsert.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="392,850" />
+      <AbsolutePoint location="392,731" />
+      <AbsolutePoint location="205,731" />
+      <AbsolutePoint location="205,546" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/floorInsert.do,success,InputFloor,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="175,546" />
+      <AbsolutePoint location="175,875" />
+      <AbsolutePoint location="350,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zonePreSearch.do,null,zonePreSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1303,716" />
+      <AbsolutePoint location="1303,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zonePreCreate.do,success,ZonePreCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="476,1146" />
+      <AbsolutePoint location="476,1756" />
+      <AbsolutePoint location="1304,1756" />
+      <AbsolutePoint location="1304,1501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/floorSearch.do,success,FloorSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="475,346" />
+      <AbsolutePoint location="475,875" />
+      <AbsolutePoint location="650,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="zonePreCreate,null,/zoneCreate.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="156,1275" />
+      <AbsolutePoint location="265,1275" />
+      <AbsolutePoint location="265,916" />
+      <AbsolutePoint location="950,916" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zoneSearch.do,success,zoneSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1387,546" />
+      <AbsolutePoint location="1387,1275" />
+      <AbsolutePoint location="1040,1275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Create.do,null,TilesFloor,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="729,483" />
+      <AbsolutePoint location="869,483" />
+      <AbsolutePoint location="869,675" />
+      <AbsolutePoint location="950,675" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zonePreCreate.do,null,zoneCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="364,1146" />
+      <AbsolutePoint location="364,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ZoneCreate.do,null,ZoneCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,1475" />
+      <AbsolutePoint location="741,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="ZoneSearch,null,/zoneSearch.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="96,1450" />
+      <AbsolutePoint location="96,1376" />
+      <AbsolutePoint location="1375,1376" />
+      <AbsolutePoint location="1375,546" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="zoneCreate,null,/zonePreCreate.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="424,1250" />
+      <AbsolutePoint location="424,1146" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ZoneSearch.do,null,ZoneSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,683" />
+      <AbsolutePoint location="1211,683" />
+      <AbsolutePoint location="1211,1576" />
+      <AbsolutePoint location="96,1576" />
+      <AbsolutePoint location="96,1501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zonePreCreate.do,success,ZoneCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="476,1146" />
+      <AbsolutePoint location="476,1475" />
+      <AbsolutePoint location="650,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zonePreCreate.do,null,ZonePreCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="506,1146" />
+      <AbsolutePoint location="506,1756" />
+      <AbsolutePoint location="1304,1756" />
+      <AbsolutePoint location="1304,1501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zoneSearch.do,success,ZoneSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1405,546" />
+      <AbsolutePoint location="1405,1475" />
+      <AbsolutePoint location="142,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zoneSearch.do,success,zonePreSearch,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1387,546" />
+      <AbsolutePoint location="1387,875" />
+      <AbsolutePoint location="1357,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zoneSearch.do,success,zoneSearchTile,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1387,546" />
+      <AbsolutePoint location="1387,1075" />
+      <AbsolutePoint location="1359,1075" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zonePreCreate.do,null,ZoneCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="583,1116" />
+      <AbsolutePoint location="695,1116" />
+      <AbsolutePoint location="695,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zonePreCreate.do,null,zonePreCreate,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,1116" />
+      <AbsolutePoint location="103,1116" />
+      <AbsolutePoint location="103,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="ZoneCreate,null,/zoneCreate.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="695,1501" />
+      <AbsolutePoint location="695,1666" />
+      <AbsolutePoint location="1101,1666" />
+      <AbsolutePoint location="1101,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="FloorSearch,null,/floorSearch.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="742,875" />
+      <AbsolutePoint location="809,875" />
+      <AbsolutePoint location="809,286" />
+      <AbsolutePoint location="601,286" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
